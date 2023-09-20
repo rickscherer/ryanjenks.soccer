@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Footme - Football Player Portfolio HTML Template</title>
+    <title>Ryan Jenks - Goalkeeper</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
@@ -53,9 +54,6 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header-right d-none d-lg-block">
-                    <a href="#0" class="custom-button choto">Follow Me</a>
-                </div>
                 <div class="ellipsis-bar ml-auto d-lg-none">
                     <i class="fas fa-ellipsis-h"></i>
                 </div>
@@ -71,43 +69,12 @@
                 <div class="header-bottom-wrapper">
                     <ul class="menu">
                         <li>
-                            <a href="#0">Home</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="index.html">Home 1</a>
-                                </li>
-                                <li>
-                                    <a href="index-2.html">Home 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#0">Blog</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="blog.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="blog-single.html">Blog Single</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="award.html">awards</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
                             <a href="contact.html">contact</a>
                         </li>
-                        <li>
-                            <a href="#0" class="custom-button choto py-0 d-lg-none">Follow Me</a>
-                        </li>
                     </ul>
-                    <form class="header-search-form d-none d-lg-flex">
-                        <input type="text" placeholder="Search Keyword">
-                        <button type="submit">
-                            <i class="flaticon-search-interface-symbol"></i>
-                        </button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -148,7 +115,7 @@
         </a>
         <div class="container">
             <div class="hero-content">
-                <h1 class="title" data-bg="Contact"><span>Contact with me</span></h1>
+                <h1 class="title" data-bg="Contact"><span>Contact</span></h1>
                 <ul class="breadcrumb">
                     <li>
                         <a href="index.html">Home</a>
@@ -162,8 +129,7 @@
     </section>
     <!-- === Hero Section === -->
 
-
-    <!-- === Contact Section === -->
+    <!-- === Contact Section ===
     <div class="contact-info-section padding-top padding-bottom" id="about">
         <div class="container">
             <div class="row mb-30-none justify-content-center">
@@ -210,12 +176,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- === Contact Section === -->
-
+    </div>-->
 
     <!-- === Contact Section === -->
-    <div class="contact-info-section padding-bottom">
+    <BR>
+      <div class="contact-info-section padding-bottom">
         <div class="container">
             <div class="contact-wrapper">
                 <div class="hello">
@@ -223,21 +188,23 @@
                 </div>
                 <div class="content">
                     <div class="para-header">
-                        <h2 class="title">With Me</h2>
-                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their</p>
+                        <h2 class="title">Connect With Me</h2>
                     </div>
-                    <form class="contact-form mb-30-none" id="contact_form_submit">
+                    <form class="contact-form mb-30-none" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xzbljvdn" method="post">
+                      <fieldset id="fs-frm-inputs">
                         <div class="contact-form-group">
-                            <input type="text" placeholder="Full Name" name="name" id="name">
+                            <input type="text" placeholder="Full Name" name="_name" id="full-name" required="">
                         </div>
                         <div class="contact-form-group">
-                            <input type="text" placeholder="Email/Phone Number" name="email" id="email">
+                            <input type="email" placeholder="Your Email" name="_replyto" id="email-address" required="">
                         </div>
                         <div class="contact-form-group">
-                            <textarea name="message" id="message" placeholder="Type Message"></textarea>
+                            <textarea rows="8" name="message" id="message" placeholder="Type your message..." required=""></textarea>
                         </div>
+                      </fieldset>
+                        <div class="g-recaptcha" data-sitekey="6LendD4oAAAAAB37pr71AmiscRARUI7w504dgA5W"></div>
                         <div class="contact-form-group">
-                            <button type="submit">Submit Now</button>
+                            <button type="submit" value="Send">Send</button>
                         </div>
                     </form>
                 </div>
@@ -248,75 +215,47 @@
 
 
     <!-- === Footer Section === -->
-    <footer class="bg_img footer-overlay" data-background="./assets/images/footer-bg.jpg">
-        <a href="#" class="banner-icon">
-            <i class="flaticon-up-arrow-angle"></i>
-        </a>
-        <div class="footer-shape-bg bg_img" data-background="./assets/images/footer-shape.png"></div>
+    <footer class="bg_img bg-overlay" data-background="./assets/images/footer-bg.jpg" id="FollowMe">
         <div class="container">
-            <div class="footer-area">
-                <div class="footer-widget widget-about">
-                    <div class="logo">
-                        <img src="./assets/images/logo/logo.png" alt="logo">
-                    </div>
-                    <p>Dempor pede libero dapi useu class venenatis ut bibendum quam ut nibh necm. NonhonPede mollis vel vitae dorpis Sed odio ultrices id, est eu mauris.</p>
-                </div>
-                <div class="footer-widget widget-link">
-                    <h5 class="title">Useful Link</h5>
-                    <ul>
-                        <li>
-                            <a href="#0">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#0">History</a>
-                        </li>
-                        <li>
-                            <a href="#0">Faqs</a>
-                        </li>
-                        <li>
-                            <a href="#0">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#0">Award</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-widget widget-link">
-                    <h5 class="title">My Awards</h5>
-                    <ul>
-                        <li>
-                            <a href="#0">FIFA The Best</a>
-                        </li>
-                        <li>
-                            <a href="#0">MOTM</a>
-                        </li>
-                        <li>
-                            <a href="#0">Uefa The Best</a>
-                        </li>
-                        <li>
-                            <a href="#0">POTY</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-widget widget-follow">
-                    <h5 class="title">Follow Me</h5>
-                    <p>At vero eos et accusamus eiusto odio dignissimos ducimus qui blanditiis praesentium voltatum </p>
-                    <ul class="social-icons choto">
-                        <li>
-                            <a href="#0"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="active"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#0"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="footer-top padding-top padding-bottom">
+                <h3 class="title">Follow Me</h3>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="active"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#0"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <ul class="links">
+                    <li>
+                        <a href="index.html#About">About Me</a>
+                    </li>
+<!--                    <li>
+                        <a href="#0">Skill</a>
+                    </li>
+                    <li>
+                        <a href="#0">History</a>
+                    </li>
+                    <li>
+                        <a href="#0">Feedback</a>
+                    </li>
+                    <li>
+                        <a href="#0">Awards</a>
+                    </li>
+-->                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
             <div class="copyright">
                 <p class="m-0">
-                    &copy; All Right Reserved By <a href="#0">Viserlab</a>
+                    &copy;2023 All Rights Reserved By <a href="#0">RyanJenks.Soccer</a>
                 </p>
             </div>
         </div>
